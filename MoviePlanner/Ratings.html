@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings & Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">Rate the Movie</h2>
+        <form>
+            <div class="flex items-center mb-4">
+                <label for="rating" class="mr-4 text-lg">Rate the movie:</label>
+                <div class="flex">
+                    <input type="radio" id="star5" name="rating" value="5" class="mr-2">
+                    <input type="radio" id="star4" name="rating" value="4" class="mr-2">
+                    <input type="radio" id="star3" name="rating" value="3" class="mr-2">
+                    <input type="radio" id="star2" name="rating" value="2" class="mr-2">
+                    <input type="radio" id="star1" name="rating" value="1" class="mr-2">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="review" class="block text-sm font-medium text-gray-700">Your Review</label>
+                <textarea id="review" name="review" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">Submit Review</button>
+        </form>
+    </div>
+</body>
+</html>

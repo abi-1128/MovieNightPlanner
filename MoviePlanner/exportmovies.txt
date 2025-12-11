@@ -1,0 +1,15 @@
+<?php
+header("Content-Type: text/csv");
+header("Content-Disposition: attachment; filename=movies.csv");
+
+$conn = new mysqli("localhost", "root", "", "movieplanner");
+$result = $conn->query("SELECT MovieID, Title, Genre, Duration FROM Movie");
+
+$output = fopen("php://output", "w");
+fputcsv($output, ['ID', 'Title', 'Genre', 'Duration']);
+
+while ($row = $result->fetch_assoc()) {
+    fputcsv($output, $row);
+}
+fclose($output);
+?>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">Snack Planner</h2>
+        <form>
+            <div class="mb-4">
+                <label for="snack-name" class="block text-sm font-medium text-gray-700">Snack Name</label>
+                <input type="text" id="snack-name" name="snack-name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label for="assigned-person" class="block text-sm font-medium text-gray-700">Assign To</label>
+                <input type="text" id="assigned-person" name="assigned-person" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">Add Snack</button>
+        </form>
+        <div class="mt-6">
+            <h3 class="font-semibold text-lg">Snack List</h3>
+            <ul class="list-disc pl-5">
+                <li>Popcorn - Assigned to John</li>
+                <li>Chips - Assigned to Sarah</li>
+                <!-- Repeat snack items here -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
